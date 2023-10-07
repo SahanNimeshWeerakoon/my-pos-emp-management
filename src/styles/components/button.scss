@@ -1,0 +1,33 @@
+.btn {
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: none;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+    }
+    &_icon {
+        padding: 7px;
+        background: transparent;
+        &:hover {
+
+        }
+    }
+    &--create {
+        background-image: linear-gradient(to right, $create-color-start, $create-color-end);
+    }
+    &--edit {
+        background-image: linear-gradient(to right, $edit-color-start, $edit-color-end);
+    }
+    &--delete {
+        background: $edit-color-start;
+    }
+    
+}

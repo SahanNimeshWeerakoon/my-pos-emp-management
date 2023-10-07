@@ -1,0 +1,27 @@
+.icon {
+    height: 14px;
+    &:hover {
+      cursor: pointer;
+    }
+    &-lg {
+        height: 20px;
+    }
+}
+
+.d-none {
+display: none;
+}
+
+.d-flex { display: flex; flex-wrap: wrap; }
+.justify-end { justify-content: flex-end; }
+.justify-start { justify-content: flex-start; }
+.justify-center { justify-content: center; }
+.justify-around { justify-content: space-around; }
+.justify-between { justify-content: space-between; }
+.align-center { align-items: center; }
+
+input, select, textarea {
+    &:focus {
+        outline: none;
+    }
+}

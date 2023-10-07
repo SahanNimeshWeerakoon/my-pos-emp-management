@@ -1,0 +1,18 @@
+// variables
+@import "./styles/variables.scss";
+@import "./styles/common.scss";
+
+// components
+@import "./styles/components/button.scss";
+@import "./styles/components/card.scss";
+@import "./styles/components/modal.scss";
+@import "./styles/components/search.scss";
+
+.App {
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    .create-btn-container {
+        margin-bottom: 30px;
+    }
+}

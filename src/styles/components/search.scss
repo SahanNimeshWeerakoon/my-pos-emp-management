@@ -1,0 +1,41 @@
+.search {
+    margin: auto;
+    border: 1px solid $create-color-start;
+    width: 0;
+    transition: 0.5s;
+    margin-bottom: 50px;
+    &_input {
+        background: transparent;
+        border: none;
+        width: 0;
+        display: none;
+        transition: 0.5s;
+        &:focus {
+            outline: none;
+        }
+    }
+    img {
+        width: 16px;
+        height: auto;
+        border: 1px solid $create-color-start;
+        border-radius: 30px;
+        padding: 5px 10px;
+        transition: 0.5s;
+    }
+    &.active {
+        width: 40%;
+        border-radius: 30px;
+        padding: 5px 10px;
+        .search_input{
+            width: 90%;
+            border: none;
+            display: block;
+            height: 30px;
+        }
+        img {
+            border: none;
+            padding: 0;
+            border-radius: 0;
+        }
+    }
+}
