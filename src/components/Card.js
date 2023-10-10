@@ -11,8 +11,11 @@ const Card = ({ onEdit, onDelete, employee }) => {
         <div className="card">
             <div className={`card_content ${!isFront ? 'viewDetails' : ''}`}>
                 <div className="card_front">
-                    <h3>{ empNo }</h3>
-                    <p><b>{ empName }</b></p>
+                    <h3 className="d-flex justify-between">
+                        <span>{ empNo }</span>
+                        {isActive ? (<img src="/img/active.png" alt="active" title="active" />) : (<img src="/img/in-active.png" alt="inactive" title="inactive" />) }
+                    </h3>
+                    <p className="card_username"><b>{ empName }</b></p>
                     <p>Joined On</p>
                     <p><b>{ moment(dateOfJoin).format("MM-DD-YYYY") }</b></p>
                     <div className="card_btns d-flex align-center justify-end">
@@ -37,13 +40,12 @@ const Card = ({ onEdit, onDelete, employee }) => {
                             <p><b>#</b>{ empNo }</p>
                             <p><b>Name: </b>{ empName }</p>
                             <p><b>Address: </b>{ `${empAddressLine1}, ${empAddressLine2}, ${empAddressLine3}` }</p>
-                            <p><b>Department: </b>{ departmentName }</p>
+                            <p><b>Basic: </b>{ basicSalary }</p>
                         </div>
                         <div className="card_backRight">
                             <p><b>Joined On: </b>{ moment(dateOfJoin).format("MM-DD-YYYY") }</p>
                             <p><b>Born On: </b>{ moment(dateOfBirth).format("MM-DD-YYYY") }</p>
-                            <p><b>Basic: </b>{ basicSalary }</p>
-                            <p>{ isActive ? (<span>active</span>) : (<span>Not active</span>) }</p>
+                            <p><b>Department: </b>{ departmentName }</p>
                         </div>
                     </div>
                 </div>

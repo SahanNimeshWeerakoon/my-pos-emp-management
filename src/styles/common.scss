@@ -19,6 +19,7 @@ display: none;
 .justify-around { justify-content: space-around; }
 .justify-between { justify-content: space-between; }
 .align-center { align-items: center; }
+.wrap { flex-wrap: wrap; }
 
 input, select, textarea {
     &:focus {

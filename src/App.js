@@ -80,7 +80,7 @@ function App() {
       <Search onEmployeeSearch={e => setSearchText(e)} />
       {/* <Button btnClasses="btn--edit" title="Edit Employee" onClick={handleBtnClick}>Edit</Button><br /><br />
       <Button btnClasses="btn--delete" title="Delete Employee" onClick={handleBtnClick}>Delete</Button><br /><br /> */}
-      <div className="d-flex justify-around">
+      <div className="d-flex justify-around wrap">
         { filteredEmployees.map(emp => {
           let employeeDepartment = departments.filter(dep => {
             return dep.departmentCode === emp.departmentCode
